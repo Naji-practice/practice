@@ -30,8 +30,8 @@ while option:
         quantity = data["quantity"]
         print(f"Name:- {name} :: Quantity:- {quantity} ::  Price:- {price}")
     
-    user_input = input("Do you want to add another fruit? (yes/no): ").strip().lower()
-    if user_input != "yes":
+    user_input = int(input("Do you want to add another fruit? (1,yes/0,no): "))
+    if user_input != 1:
         option = False
 
 
